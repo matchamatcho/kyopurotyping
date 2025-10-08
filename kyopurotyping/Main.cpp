@@ -1,4 +1,5 @@
-﻿# include <Siv3D.hpp>
+﻿#include <Siv3D.hpp>
+#include "App/src/TextLoader.h"
 
 void Main()
 {
@@ -21,6 +22,15 @@ void Main()
 	String input;
 
 	const Font font{ FontMethod::MSDF, 48, Typeface::Bold };
+
+	FilePath filePath = U"../App/data/typing/test1.txt";
+	TextLoader textLoader(filePath);
+	if (not textLoader.IsLoaded())
+	{
+		Print << U"読み込み失敗";
+		//return ;
+	}
+	textLoader.PrintAllLines();
 
 	while (System::Update())
 	{

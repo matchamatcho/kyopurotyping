@@ -144,6 +144,9 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="App\src\TextLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="App\icon.ico">
@@ -273,6 +276,7 @@
     <Text Include="App\example\LICENSE.txt">
       <Filter>Resource Files\example</Filter>
     </Text>
+    <Text Include="App\data\typing\test1.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App\dll\soundtouch\SoundTouch_x64.dll">
@@ -807,6 +811,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="App\src\TextLoader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
